@@ -12,7 +12,7 @@ After building the test database, you can directly run the following command to 
 
 or
 
-    lein run test --node dabaseIP --time-limit 60
+    lein run test --node dababaseIP --time-limit 60
 
 ## License
 

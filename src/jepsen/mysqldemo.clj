@@ -36,7 +36,7 @@
 (defn client-url
   "The HTTP url clients use to talk to a node."
   [node]
-  (node-url node 3323))
+  (node-url node 3306))
 
 (defrecord Client [conn]
   client/Client

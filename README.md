@@ -4,6 +4,16 @@
 
 Simple test for MySQL.
 
+This is adapted from [etcdemo](https://github.com/jepsen-io/jepsen/blob/master/doc/tutorial/index.md).
+
+After building the test database, you can directly run the following command to test.(The sql file is located under the rescue folder)
+
+    lein run test --node databaseIP --test-count 10
+
+or
+
+    lein run test --node dabaseIP --time-limit 60
+
 ## License
 
 Copyright © 2020 FIXME

@@ -15,7 +15,7 @@
 
 (defn select [conn]
   (let [testdb {:subprotocol "mysql"
-               :subname (str (subs (conn :endpoint) 5) "/test?useUnicode=true&characterEncoding=UTF-8")
+               :subname (str (subs (conn :endpoint) 5) "/test?characterEncoding=UTF-8")
                :user "root"
                :password "root"}]
     (sql/with-connection testdb ; 链接数据库
@@ -26,7 +26,7 @@
 
 (defn insert [conn id]
   (let [testdb {:subprotocol "mysql"
-               :subname (str (subs (conn :endpoint) 5) "/test?useUnicode=true&characterEncoding=UTF-8")
+               :subname (str (subs (conn :endpoint) 5) "/test?characterEncoding=UTF-8")
                :user "root"
                :password "root"}]
     (sql/with-connection testdb ; 链接数据库
@@ -35,7 +35,7 @@
 
 (defn cas [conn old new]
   (let [testdb {:subprotocol "mysql"
-               :subname (str (subs (conn :endpoint) 5) "/test?useUnicode=true&characterEncoding=UTF-8")
+               :subname (str (subs (conn :endpoint) 5) "/test?characterEncoding=UTF-8")
                :user "root"
                :password "root"}]
     (sql/with-connection testdb ; 链接数据库
